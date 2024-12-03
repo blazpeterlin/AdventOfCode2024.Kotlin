@@ -1,8 +1,8 @@
 
 fun main() {
-    val res1 = day02.part1()
+    val res1 = day04.part1()
     println("$res1")
 
-    val res2= day02.part2()
+    val res2= day04.part2()
     println("$res2")
 }
