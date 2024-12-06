@@ -1,4 +1,4 @@
-package practice_23_2
+package practice_23_02
 
 
 data class CubeSubset(val red: Long, val green: Long, val blue: Long)

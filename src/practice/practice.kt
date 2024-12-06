@@ -1,77 +1,59 @@
 package practice
 
-import common.Coord2
-import common.GrabbedNumber
-import common.grabNumbers
-import kotlin.streams.toList
+import practice_23_05.Transformation
 
 //
 
-data class ParsedMap(val m: Map<Coord2, Char>)
-data class ParsedNumber(val num:Long, val coords: List<Coord2>)
+data class Input(val nums: List<Long>)
+//
+//fun parseInput(): Input {
+//    val inputLns = common.Parsing().parseLns("practice").filter { it.isNotEmpty() }
+//
+//    return Input(listOf())
+//
+//}
 
 
+fun part1(): Int {
+    val times = listOf(53,83,72,88)
+    val dists = listOf(333,1635,1289,1532)
 
-fun parseNumbers(lns: List<String>): List<ParsedNumber> {
-    return lns.mapIndexed { y: Int, ln: String ->
-        grabNumbers(ln).map { gn ->
-            val xs: Sequence<Int> = sequence { for (x in gn.idx .. gn.lastIdx) yield(x) }
-            val coords = xs.map { x -> Coord2(x.toLong(), y.toLong()) }.toList()
-            ParsedNumber(gn.num, coords)
-        }.toList()
-    }.toList().flatten().toList()
-}
-
-
-fun parseMap(lns: List<String>): ParsedMap {
-    val res =
-        lns.mapIndexed { y, ln: String ->
-            ln.toCharArray().toList().mapIndexed { x: Int, ch: Char ->
-                Coord2(x.toLong(),y.toLong()) to ch
+    val goodTimes = times.zip(dists).map { (t,d) ->
+        var numBeats = 0
+            for (i in 1..t-1) {
+                val runUpTime = i
+                val goTime = t - i
+                if (runUpTime * goTime > d) {
+                    numBeats++
+                }
             }
-        }.flatten().toMap()
-    return ParsedMap(res);
-}
+            numBeats
+        }
 
-operator fun Coord2.plus(other: Coord2): Coord2 { return Coord2(this.x + other.x, this.y + other.y) }
 
-fun to8ways(c: Coord2) : List<Coord2> {
-    return listOf(
-        Coord2(-1,-1),
-        Coord2(0,-1),
-        Coord2(+1,-1),
-        Coord2(-1,0),
-        Coord2(+1,0),
-        Coord2(-1,+1),
-        Coord2(0,+1),
-        Coord2(+1,+1),
-    ).map { it + c }.toList()
-}
-
-fun parseInput(): List<Long>  {
-    val inputLns = common.Parsing().parseLns("practice").filter { it.isNotEmpty() }
-    val inputMap: ParsedMap = parseMap(inputLns)
-
-    val partCoordsSet = inputMap.m.filter{ kvp -> !kvp.value.isDigit() && kvp.value != '.' }.keys
-        .flatMap { c -> to8ways(c) }
-        .distinct()
-        .toSet()
-
-    val numbersWithCoords = parseNumbers(inputLns)
-    val applicableNums = numbersWithCoords.filter{ pn -> pn.coords.any { c -> partCoordsSet.contains(c) }}.toList()
-
-    return applicableNums.map{ pn -> pn.num }
+    return goodTimes.reduce { a,b -> a*b }
 }
 
 
-fun part1(): Long {
-    val applicableNums: List<Long> = parseInput()
+fun part2(): Int {
+    val times = listOf(53837288L)
+    val dists = listOf(333163512891532L)
 
-    return applicableNums.sum()
-}
+    val goodTimes = times.zip(dists).map { (t,d) ->
+        var numBeats = 0
+        for (i in 1L..t-1L) {
+            val runUpTime = i
+            val goTime = t - i
+            if (runUpTime == 53837288L/2) {
+                numBeats += 0
+            }
+            if (runUpTime * goTime > d) {
+                numBeats++
+            }
+        }
+        numBeats
+    }
 
-fun part2(): Long {
-    val inputTerms = parseInput()
 
-    return 0
+    return goodTimes.reduce { a,b -> a*b }
 }

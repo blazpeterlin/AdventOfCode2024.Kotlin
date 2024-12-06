@@ -1,4 +1,4 @@
-package practice_23_1
+package practice_23_01
 
 data class InputTerm(val str: String)
 
