@@ -1,7 +1,12 @@
 package common
 
+import java.util.*
+
 public data class Coord2(val x: Long, val y: Long)
 public data class GrabbedNumber(val num:Long, val idx: Int, val lastIdx: Int)
+
+public operator fun Coord2.plus(other: Coord2): Coord2 { return Coord2(this.x + other.x, this.y + other.y) }
+
 
 public fun grabNumber(ln: String): GrabbedNumber? {
     return grabNumber(ln, 0)
@@ -37,8 +42,8 @@ public fun grabNumbers(ln: String) : Sequence<GrabbedNumber> {
 
 
 
-fun transpose(input: List<String>): List<String> {
-    var r: MutableList<String> = mutableListOf()
+public fun transpose(input: List<String>): List<String> {
+    val r: MutableList<String> = mutableListOf()
 
     for (i in 0..<input[0].length) {
         val s = StringBuilder()
@@ -52,8 +57,8 @@ fun transpose(input: List<String>): List<String> {
     return r;
 }
 
-fun diagonalize(input: List<String>, dir: Boolean): List<String> {
-    var r: MutableList<String> = mutableListOf()
+public fun diagonalize(input: List<String>, dir: Boolean): List<String> {
+    val r: MutableList<String> = mutableListOf()
 
     for (i in -2*input.size..<2*input.size+1) {
         val s = StringBuilder()
@@ -103,4 +108,47 @@ public fun extractImgs(input: List<String>, rows: Int, cols: Int): Sequence<Stri
     }
 
     return res;
+}
+
+
+public fun to8ways(c: Coord2) : List<Coord2> {
+    return listOf(
+        Coord2(-1,-1),
+        Coord2(0,-1),
+        Coord2(+1,-1),
+        Coord2(-1,0),
+        Coord2(+1,0),
+        Coord2(-1,+1),
+        Coord2(0,+1),
+        Coord2(+1,+1),
+    ).map { it + c }.toList()
+}
+
+
+public fun to4ways(c: Coord2) : List<Coord2> {
+    return listOf(
+        Coord2(0,-1),
+        Coord2(-1,0),
+        Coord2(+1,0),
+        Coord2(0,+1),
+    ).map { it + c }.toList()
+}
+
+
+public fun <T> permutations(lst: List<T>): Sequence<List<T>> {
+    if (lst.size <= 1) return sequence { yield (lst) }
+
+    val sub = lst[0]
+
+    return sequence {
+        val innerPerms = permutations(lst.drop(1))
+        for (perm in innerPerms) {
+            val newPerm = perm.toMutableList();
+            for (i in 0..perm.size) {
+                newPerm.add(i, sub);
+                yield (newPerm.toList())
+                newPerm.removeAt(i);
+            }
+        }
+    }
 }
