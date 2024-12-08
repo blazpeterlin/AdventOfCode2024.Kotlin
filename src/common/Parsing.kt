@@ -1,6 +1,7 @@
 package common
 
 import java.io.File
+data class ParsedMap(val m: Map<Coord2, Char>)
 
 class Parsing {
     fun parseLns(dir: String): List<String> {
@@ -13,4 +14,17 @@ class Parsing {
     }
 
     private fun file(dir: String) = File("src/$dir/input.txt")
+
+
+
+
+}
+public fun parseMap(lns: List<String>): ParsedMap {
+    val res =
+        lns.mapIndexed { y, ln: String ->
+            ln.toCharArray().toList().mapIndexed { x: Int, ch: Char ->
+                Coord2(x.toLong(),y.toLong()) to ch
+            }
+        }.flatten().toMap()
+    return ParsedMap(res);
 }

@@ -12,6 +12,16 @@ public fun grabNumber(ln: String): GrabbedNumber? {
     return grabNumber(ln, 0)
 }
 
+public fun <T1,T2> allPairs(a: List<T1>, b: List<T2>): Sequence<Pair<T1,T2>> {
+    return sequence<Pair<T1,T2>> {
+        for (ita in a) {
+            for (itb in b) {
+                yield(Pair(ita,itb))
+            }
+        }
+    }
+}
+
 fun grabNumber(ln: String, startIdxOffset: Int): GrabbedNumber? {
 
     val idxOfNum = ln.indexOfFirst { ch -> ch.isDigit() }
