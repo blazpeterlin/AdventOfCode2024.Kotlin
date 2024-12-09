@@ -61,7 +61,5 @@ fun part2(): BigInteger {
 
     val res = chineseRemainderWithStarts(listMM.map{ it.offset }, listMM.map{ it.mod })
 
-    // 10018053955852106556583608 too high
-
     return res
 }
