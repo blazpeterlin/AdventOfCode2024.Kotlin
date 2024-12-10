@@ -6,6 +6,7 @@ public data class Coord2(val x: Long, val y: Long)
 public data class GrabbedNumber(val num:Long, val idx: Int, val lastIdx: Int)
 
 public operator fun Coord2.plus(other: Coord2): Coord2 { return Coord2(this.x + other.x, this.y + other.y) }
+public operator fun Coord2.minus(other: Coord2): Coord2 { return Coord2(this.x - other.x, this.y - other.y) }
 
 
 public fun grabNumber(ln: String): GrabbedNumber? {

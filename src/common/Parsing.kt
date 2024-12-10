@@ -19,6 +19,7 @@ class Parsing {
 
 
 }
+
 public fun parseMap(lns: List<String>): ParsedMap {
     val res =
         lns.mapIndexed { y, ln: String ->
@@ -27,4 +28,14 @@ public fun parseMap(lns: List<String>): ParsedMap {
             }
         }.flatten().toMap()
     return ParsedMap(res);
+}
+
+public fun parseMapLong(lns: List<String>): Map<Coord2, Long> {
+    val res =
+        lns.mapIndexed { y, ln: String ->
+            ln.toCharArray().toList().mapIndexed { x: Int, ch: Char ->
+                Coord2(x.toLong(),y.toLong()) to ch.toString().toLong()
+            }
+        }.flatten().toMap()
+    return res;
 }
