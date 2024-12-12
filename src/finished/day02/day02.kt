@@ -1,4 +1,4 @@
-package day02
+package finished.day02
 
 import kotlin.math.abs
 

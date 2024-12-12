@@ -1,7 +1,4 @@
-package day05
-
-import common.permutations
-import java.lang.Thread.yield
+package finished.day05
 
 data class InputOrdering(val n1: Long, val n2: Long)
 data class InputPrint(val ns: List<Long>)

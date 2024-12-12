@@ -1,4 +1,4 @@
-package day03
+package finished.day03
 
 data class InputTerm(val str: String)
 data class MulTerm(val a: Int, val b: Int, val idx: Int)

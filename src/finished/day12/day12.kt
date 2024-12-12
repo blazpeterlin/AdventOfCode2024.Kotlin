@@ -1,4 +1,4 @@
-package day12
+package finished.day12
 
 import common.Coord2
 import common.parseMap

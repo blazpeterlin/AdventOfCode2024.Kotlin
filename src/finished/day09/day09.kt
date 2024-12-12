@@ -1,6 +1,4 @@
-package day09
-
-import kotlin.math.max
+package finished.day09
 
 data class Input(val nums: List<Long>)
 data class DiskFragment(val size: Long, val filled: Boolean, val idNum: Long)

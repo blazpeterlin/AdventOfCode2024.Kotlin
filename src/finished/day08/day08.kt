@@ -1,7 +1,6 @@
-package day08
+package finished.day08
 
 import common.*
-import kotlin.math.roundToLong
 
 data class Input(val ns: List<Long>)
 

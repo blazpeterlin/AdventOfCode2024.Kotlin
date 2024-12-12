@@ -1,4 +1,4 @@
-package day04
+package finished.day04
 
 import common.diagonalize
 import common.extractImgs

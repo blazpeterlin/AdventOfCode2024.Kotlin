@@ -1,8 +1,6 @@
-package day11
+package finished.day11
 
-import common.*
 import java.math.BigInteger
-import kotlin.math.roundToInt
 
 data class Input(val nums: List<Long>)
 

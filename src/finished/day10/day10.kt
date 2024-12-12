@@ -1,4 +1,4 @@
-package day10
+package finished.day10
 
 import common.*
 

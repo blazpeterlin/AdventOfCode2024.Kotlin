@@ -1,4 +1,4 @@
-package day07
+package finished.day07
 
 import kotlin.math.roundToLong
 

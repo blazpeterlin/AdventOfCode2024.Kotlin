@@ -1,4 +1,4 @@
-package day06
+package finished.day06
 
 import common.Coord2
 import common.plus

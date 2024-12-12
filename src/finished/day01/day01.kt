@@ -1,4 +1,4 @@
-package day01
+package finished.day01
 
 data class InputTerm(val a: Long, val b: Long)
 
