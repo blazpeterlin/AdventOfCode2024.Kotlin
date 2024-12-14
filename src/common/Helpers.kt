@@ -1,8 +1,13 @@
 package common
 
 import java.util.*
+import kotlin.math.abs
 
-public data class Coord2(val x: Long, val y: Long)
+public data class Coord2(val x: Long, val y: Long) {
+    public fun lenManhattan(): Long {
+        return abs(x) + abs(y)
+    }
+}
 public data class GrabbedNumber(val num:Long, val idx: Int, val lastIdx: Int)
 
 public operator fun Coord2.plus(other: Coord2): Coord2 { return Coord2(this.x + other.x, this.y + other.y) }
