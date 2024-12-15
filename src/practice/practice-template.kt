@@ -1,4 +1,4 @@
-package practice
+package practice_t
 
 data class Input(val arng: String, val constraint: List<Long>)
 

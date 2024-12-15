@@ -1,6 +1,6 @@
 
 fun main() {
-    val res1 = finished.day13.part1()
+    val res1 = finished.day13_again.part1()
 
-    val res2 = finished.day13.part2()
+    val res2 = finished.day13_again.part2()
 }

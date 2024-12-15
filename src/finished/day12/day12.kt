@@ -1,15 +1,13 @@
 package finished.day12
 
-import common.Coord2
-import common.parseMap
-import common.to4ways
+import common.*
 
 data class Input(val nums: List<Long>)
 
 
 fun parseInput(): Map<Coord2, Char> {
     val r =
-        common.Parsing().parseLns("day12")
+        common.Parsing().parseLns("finished/day12")
             .filter { it.isNotEmpty() }
             .toList()
 
@@ -126,6 +124,9 @@ fun part1(): Long {
     return prices.sum()
 }
 
+
+data class Region(val id: Char, val coords: List<Coord2>)
+
 fun part2(): Long {
     val m = parseInput()
 
@@ -135,7 +136,17 @@ fun part2(): Long {
         regs.add(eatRegion(mm))
     }
 
-    val prices = regs.map{ getPrice2(it, m) }
+    val regsSorted = regs.sortedByDescending { it.size }
+    println()
+    for(reg in regsSorted) {
+        printMap(reg.map{ it to FULLBLOCK}.toMap())
+        println(reg.size)
+    }
 
-    return prices.sum()
+    val regsTyped = regs.map{coords -> Region(m[coords[0]]!!, coords)}
+
+    val prices = regsTyped.map{ Pair(it.id, getPrice2(it.coords, m)) }.sortedByDescending{ it.second }.toList()
+
+
+    return prices.map{it.second}.sum()
 }

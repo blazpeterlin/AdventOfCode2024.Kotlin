@@ -1,7 +1,11 @@
 package common
 
+import finished.day14.Robot
 import java.util.*
 import kotlin.math.abs
+
+
+val FULLBLOCK = '█'
 
 public data class Coord2(val x: Long, val y: Long) {
     public fun lenManhattan(): Long {
@@ -25,6 +29,24 @@ public fun <T1,T2> allPairs(a: List<T1>, b: List<T2>): Sequence<Pair<T1,T2>> {
                 yield(Pair(ita,itb))
             }
         }
+    }
+}
+
+public fun printMap(rs: Map<Coord2, Char>) {
+
+    val minW = rs.keys.map{ it.x }.min()
+    val maxW = rs.keys.map{ it.x }.max()
+
+    val minH = rs.keys.map{ it.y }.min()
+    val maxH = rs.keys.map{ it.y }.max()
+
+
+    for (y in minH..maxH) {
+        for(x in minW..maxW) {
+            val char = rs[Coord2(x,y)] ?: " "
+            print (char)
+        }
+        println()
     }
 }
 
