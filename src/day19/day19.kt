@@ -1,10 +1,10 @@
-package day16
+package day19
 
 data class Input(val arng: String, val constraint: List<Long>)
 
 fun parseInput(): List<Input> {
     val r =
-        common.Parsing().parseLns("day16")
+        common.Parsing().parseLns("day19")
             .filter { it.isNotEmpty() }
             .map{it.split(' ')}
             .map{ (a, b) -> Input(a, b.split(',').map{it.toLong()}) }

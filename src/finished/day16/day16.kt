@@ -44,13 +44,13 @@ fun turnRight(dir: Coord2): Coord2 {
 
 data class State(val pos: Coord2, val dir: Coord2, val dist: Long, val pathBack: State?)
 
-fun getNeighbours(m: Map<Coord2, Char>, st: State): List<Pair<State, Long>> {
+fun getNeighbours(m: Map<Coord2, Char>, st: State): List<State> {
     val l = State(st.pos, turnLeft(st.dir), st.dist+1000L, st)
     val r = State(st.pos, turnRight(st.dir), st.dist+1000L, st)
     val f = State(st.pos + st.dir, st.dir, st.dist+1L, st)
-    val res = mutableListOf(Pair(l, 1000L),Pair(r, 1000L))
+    val res = mutableListOf(l, r)
     if (m[f.pos] != '#') {
-        res.add(Pair(f, 1L))
+        res.add(f)
     }
     return res
 }
@@ -66,7 +66,7 @@ fun part1(): Long {
 
     val res = Graph<State>().TraverseWithIds(
         listOf(st0),
-        getNeighboursCosts = { n -> getNeighbours(m0, n) },
+        getNeighbours = { n -> getNeighbours(m0, n) },
         getScore = { x -> x.dist },
         getId = { st -> Pair(st.pos, st.dir) }
     ).filter{ st -> st.pos == end }
@@ -76,7 +76,7 @@ fun part1(): Long {
 }
 
 
-fun<T,U> traverseWithIds(starts: List<T>, getNeighboursCosts: (T)->List<Pair<T, Long>>, getScore: (T)->Long, getId: (T)->U)
+fun<T,U> traverseWithIds(starts: List<T>, getNeighbours: (T)->List<T>, getScore: (T)->Long, getId: (T)->U)
     : Sequence<Pair<T, List<T>>> {
     val pq = PriorityQueue<GraphNode<T>>(compareBy { it.score })
     pq.addAll(starts.map{ s -> GraphNode(s, getScore(s))})
@@ -98,10 +98,10 @@ fun<T,U> traverseWithIds(starts: List<T>, getNeighboursCosts: (T)->List<Pair<T, 
             yield(Pair(node.elt, bestVisited[nodeId]!!))
 
 
-            val ns = bestVisited[nodeId]!!.map{ n -> getNeighboursCosts(n) }.flatten().toList() // .filter{ (n, cost) -> !visited.contains(getId(n)) }
+            val ns = bestVisited[nodeId]!!.map{ n -> getNeighbours(n) }.flatten().toList() // .filter{ (n, cost) -> !visited.contains(getId(n)) }
 
 
-            pq.addAll(ns.map{ (n, cost) -> GraphNode(n, getScore(n))})
+            pq.addAll(ns.map{ n -> GraphNode(n, getScore(n))})
         }
     }
 }
@@ -134,7 +134,7 @@ fun part2(): Long {
 
     val resList = traverseWithIds(
         listOf(st0),
-        getNeighboursCosts = { n -> getNeighbours(m0, n) },
+        getNeighbours = { n -> getNeighbours(m0, n) },
         getScore = { x -> x.dist },
         getId = { st -> Pair(st.pos, st.dir) }
     ).filter{ st -> st.first.pos == end }

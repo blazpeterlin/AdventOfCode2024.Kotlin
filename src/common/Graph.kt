@@ -28,8 +28,7 @@ class Graph<T> {
         }
     }
 
-
-    public fun<U> TraverseWithIds(starts: List<T>, getNeighboursCosts: (T)->List<Pair<T, Long>>, getScore: (T)->Long, getId: (T)->U): Sequence<T> {
+    public fun<U> TraverseWithIds(starts: List<T>, getNeighbours: (T)->List<T>, getScore: (T)->Long, getId: (T)->U): Sequence<T> {
         val pq = PriorityQueue<GraphNode<T>>(compareBy { it.score })
         pq.addAll(starts.map{ s -> GraphNode(s, getScore(s))})
 
@@ -44,9 +43,9 @@ class Graph<T> {
 
                 visited.add(getId(node.elt))
 
-                val ns = getNeighboursCosts(node.elt).filter{ (n, cost) -> !visited.contains(getId(n)) }
+                val ns = getNeighbours(node.elt).filter{ n -> !visited.contains(getId(n)) }
 
-                pq.addAll(ns.map{ (n, cost) -> GraphNode(n, getScore(n))})
+                pq.addAll(ns.map{ n -> GraphNode(n, getScore(n))})
             }
         }
     }
