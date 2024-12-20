@@ -4,16 +4,16 @@ import java.io.File
 data class ParsedMap(val m: Map<Coord2, Char>)
 
 class Parsing {
-    fun parseLns(dir: String): List<String> {
-        val lns: List<String> = file(dir).readLines()
+    fun parseLns(dir: String, name: String = "input.txt"): List<String> {
+        val lns: List<String> = file(dir, name).readLines()
         return lns
     }
 
     fun parseTxt(dir: String): String {
-        return file(dir).readText()
+        return file(dir, "input.txt").readText()
     }
 
-    private fun file(dir: String) = File("src/$dir/input.txt")
+    private fun file(dir: String, name: String) = File("src/$dir/$name")
 
 
 
