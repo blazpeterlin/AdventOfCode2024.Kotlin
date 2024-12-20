@@ -1,4 +1,4 @@
-package day18
+package finished.day18
 
 import common.Coord2
 import common.Graph
