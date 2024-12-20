@@ -11,6 +11,10 @@ public data class Coord2(val x: Long, val y: Long) {
     public fun lenManhattan(): Long {
         return abs(x) + abs(y)
     }
+
+    operator fun times(operand: Int): Coord2 {
+        return Coord2(this.x * operand, this.y * operand)
+    }
 }
 public data class GrabbedNumber(val num:Long, val idx: Int, val lastIdx: Int)
 
