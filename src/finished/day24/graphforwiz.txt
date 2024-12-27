@@ -1,0 +1,672 @@
+digraph D {
+
+
+	qsv [ shape=invtriangle, label = "qsv OR", fillcolor=cyan, style=filled ]
+	fkb [ shape=square, label = "fkb XOR", fillcolor=yellow, style=filled ]
+	vht [ shape=square, label = "vht XOR", fillcolor=yellow, style=filled ]
+	kgv [ shape=invtriangle, label = "kgv OR", fillcolor=cyan, style=filled ]
+	z31 [ shape=diamond, label = "z31 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	djh [ shape=invhouse, label = "djh AND", fillcolor=orange, style=filled ]
+	djr [ shape=invhouse, label = "djr AND", fillcolor=orange, style=filled ]
+	gpt [ shape=invhouse, label = "gpt AND", fillcolor=orange, style=filled ]
+	z30 [ shape=invhouse, label = "z30 AND", fillcolor=orange, style=filled ]
+	jsd [ shape=square, label = "jsd XOR", fillcolor=yellow, style=filled ]
+	z03 [ shape=diamond, label = "z03 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	hpv [ shape=invhouse, label = "hpv AND", fillcolor=orange, style=filled ]
+	rkg [ shape=invhouse, label = "rkg AND", fillcolor=orange, style=filled ]
+	gvm [ shape=square, label = "gvm XOR", fillcolor=yellow, style=filled ]
+	z00 [ shape=diamond, label = "z00 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	z16 [ shape=diamond, label = "z16 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	htp [ shape=invhouse, label = "htp AND", fillcolor=orange, style=filled ]
+	hbf [ shape=invhouse, label = "hbf AND", fillcolor=orange, style=filled ]
+	ggr [ shape=invhouse, label = "ggr AND", fillcolor=orange, style=filled ]
+	fqm [ shape=invhouse, label = "fqm AND", fillcolor=orange, style=filled ]
+	z20 [ shape=diamond, label = "z20 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	dft [ shape=square, label = "dft XOR", fillcolor=yellow, style=filled ]
+	mnn [ shape=square, label = "mnn XOR", fillcolor=yellow, style=filled ]
+	ccv [ shape=invhouse, label = "ccv AND", fillcolor=orange, style=filled ]
+	vvj [ shape=invhouse, label = "vvj AND", fillcolor=orange, style=filled ]
+	z38 [ shape=diamond, label = "z38 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	z34 [ shape=diamond, label = "z34 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	mjw [ shape=invhouse, label = "mjw AND", fillcolor=orange, style=filled ]
+	ckf [ shape=invhouse, label = "ckf AND", fillcolor=orange, style=filled ]
+	gjq [ shape=square, label = "gjq XOR", fillcolor=yellow, style=filled ]
+	fdg [ shape=invhouse, label = "fdg AND", fillcolor=orange, style=filled ]
+	z27 [ shape=diamond, label = "z27 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	tkj [ shape=invtriangle, label = "tkj OR", fillcolor=cyan, style=filled ]
+	z13 [ shape=diamond, label = "z13 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	dwt [ shape=invhouse, label = "dwt AND", fillcolor=orange, style=filled ]
+	ggg [ shape=invtriangle, label = "ggg OR", fillcolor=cyan, style=filled ]
+	z11 [ shape=diamond, label = "z11 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	pvr [ shape=invtriangle, label = "pvr OR", fillcolor=cyan, style=filled ]
+	dvj [ shape=square, label = "dvj XOR", fillcolor=yellow, style=filled ]
+	nng [ shape=invhouse, label = "nng AND", fillcolor=orange, style=filled ]
+	vqn [ shape=square, label = "vqn XOR", fillcolor=yellow, style=filled ]
+	csh [ shape=invhouse, label = "csh AND", fillcolor=orange, style=filled ]
+	z06 [ shape=diamond, label = "z06 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	qgc [ shape=invhouse, label = "qgc AND", fillcolor=orange, style=filled ]
+	fgd [ shape=square, label = "fgd XOR", fillcolor=yellow, style=filled ]
+	z35 [ shape=diamond, label = "z35 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	cpg [ shape=invhouse, label = "cpg AND", fillcolor=orange, style=filled ]
+	hfq [ shape=invtriangle, label = "hfq OR", fillcolor=cyan, style=filled ]
+	jjk [ shape=invtriangle, label = "jjk OR", fillcolor=cyan, style=filled ]
+	pqq [ shape=invhouse, label = "pqq AND", fillcolor=orange, style=filled ]
+	gth [ shape=invhouse, label = "gth AND", fillcolor=orange, style=filled ]
+	bkn [ shape=invhouse, label = "bkn AND", fillcolor=orange, style=filled ]
+	fqs [ shape=invhouse, label = "fqs AND", fillcolor=orange, style=filled ]
+	z18 [ shape=diamond, label = "z18 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	fnc [ shape=invtriangle, label = "fnc OR", fillcolor=cyan, style=filled ]
+	mjd [ shape=invtriangle, label = "mjd OR", fillcolor=cyan, style=filled ]
+	z36 [ shape=diamond, label = "z36 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	dqk [ shape=invhouse, label = "dqk AND", fillcolor=orange, style=filled ]
+	cgq [ shape=invtriangle, label = "cgq OR", fillcolor=cyan, style=filled ]
+	hwf [ shape=square, label = "hwf XOR", fillcolor=yellow, style=filled ]
+	kgr [ shape=invtriangle, label = "kgr OR", fillcolor=cyan, style=filled ]
+	swj [ shape=invhouse, label = "swj AND", fillcolor=orange, style=filled ]
+	tmf [ shape=invhouse, label = "tmf AND", fillcolor=orange, style=filled ]
+	gdr [ shape=invhouse, label = "gdr AND", fillcolor=orange, style=filled ]
+	tvp [ shape=square, label = "tvp XOR", fillcolor=yellow, style=filled ]
+	fwf [ shape=invtriangle, label = "fwf OR", fillcolor=cyan, style=filled ]
+	kjp [ shape=invhouse, label = "kjp AND", fillcolor=orange, style=filled ]
+	ggh [ shape=invtriangle, label = "ggh OR", fillcolor=cyan, style=filled ]
+	vmd [ shape=square, label = "vmd XOR", fillcolor=yellow, style=filled ]
+	vrw [ shape=square, label = "vrw XOR", fillcolor=yellow, style=filled ]
+	vrg [ shape=square, label = "vrg XOR", fillcolor=yellow, style=filled ]
+	gvj [ shape=invtriangle, label = "gvj OR", fillcolor=cyan, style=filled ]
+	qwh [ shape=invhouse, label = "qwh AND", fillcolor=orange, style=filled ]
+	vbk [ shape=invtriangle, label = "vbk OR", fillcolor=cyan, style=filled ]
+	z08 [ shape=diamond, label = "z08 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	wff [ shape=invtriangle, label = "wff OR", fillcolor=cyan, style=filled ]
+	ppv [ shape=invhouse, label = "ppv AND", fillcolor=orange, style=filled ]
+	z05 [ shape=invtriangle, label = "z05 OR", fillcolor=cyan, style=filled ]
+	ngc [ shape=invtriangle, label = "ngc OR", fillcolor=cyan, style=filled ]
+	mdw [ shape=square, label = "mdw XOR", fillcolor=yellow, style=filled ]
+	z42 [ shape=diamond, label = "z42 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	nqs [ shape=invhouse, label = "nqs AND", fillcolor=orange, style=filled ]
+	mkk [ shape=invtriangle, label = "mkk OR", fillcolor=cyan, style=filled ]
+	rrk [ shape=square, label = "rrk XOR", fillcolor=yellow, style=filled ]
+	mtc [ shape=invhouse, label = "mtc AND", fillcolor=orange, style=filled ]
+	njs [ shape=invhouse, label = "njs AND", fillcolor=orange, style=filled ]
+	ksv [ shape=square, label = "ksv XOR", fillcolor=yellow, style=filled ]
+	nbf [ shape=square, label = "nbf XOR", fillcolor=yellow, style=filled ]
+	rsq [ shape=invtriangle, label = "rsq OR", fillcolor=cyan, style=filled ]
+	z07 [ shape=diamond, label = "z07 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	ppr [ shape=invhouse, label = "ppr AND", fillcolor=orange, style=filled ]
+	ncc [ shape=invhouse, label = "ncc AND", fillcolor=orange, style=filled ]
+	gbn [ shape=square, label = "gbn XOR", fillcolor=yellow, style=filled ]
+	fsb [ shape=invhouse, label = "fsb AND", fillcolor=orange, style=filled ]
+	mcm [ shape=invhouse, label = "mcm AND", fillcolor=orange, style=filled ]
+	jpj [ shape=invtriangle, label = "jpj OR", fillcolor=cyan, style=filled ]
+	hdb [ shape=invhouse, label = "hdb AND", fillcolor=orange, style=filled ]
+	z39 [ shape=diamond, label = "z39 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	ctb [ shape=invhouse, label = "ctb AND", fillcolor=orange, style=filled ]
+	vvg [ shape=invhouse, label = "vvg AND", fillcolor=orange, style=filled ]
+	trb [ shape=invtriangle, label = "trb OR", fillcolor=cyan, style=filled ]
+	rvt [ shape=invhouse, label = "rvt AND", fillcolor=orange, style=filled ]
+	sgt [ shape=invhouse, label = "sgt AND", fillcolor=orange, style=filled ]
+	z28 [ shape=diamond, label = "z28 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	tvj [ shape=square, label = "tvj XOR", fillcolor=yellow, style=filled ]
+	rtb [ shape=invhouse, label = "rtb AND", fillcolor=orange, style=filled ]
+	mnk [ shape=square, label = "mnk XOR", fillcolor=yellow, style=filled ]
+	kff [ shape=invhouse, label = "kff AND", fillcolor=orange, style=filled ]
+	kps [ shape=square, label = "kps XOR", fillcolor=yellow, style=filled ]
+	z09 [ shape=diamond, label = "z09 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	tcm [ shape=invhouse, label = "tcm AND", fillcolor=orange, style=filled ]
+	z29 [ shape=diamond, label = "z29 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	wck [ shape=invhouse, label = "wck AND", fillcolor=orange, style=filled ]
+	z24 [ shape=diamond, label = "z24 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	fhn [ shape=invtriangle, label = "fhn OR", fillcolor=cyan, style=filled ]
+	z41 [ shape=diamond, label = "z41 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	cdw [ shape=square, label = "cdw XOR", fillcolor=yellow, style=filled ]
+	fdw [ shape=invtriangle, label = "fdw OR", fillcolor=cyan, style=filled ]
+	qrm [ shape=invhouse, label = "qrm AND", fillcolor=orange, style=filled ]
+	rqn [ shape=square, label = "rqn XOR", fillcolor=yellow, style=filled ]
+	dwb [ shape=invhouse, label = "dwb AND", fillcolor=orange, style=filled ]
+	jkj [ shape=invtriangle, label = "jkj OR", fillcolor=cyan, style=filled ]
+	hrq [ shape=invhouse, label = "hrq AND", fillcolor=orange, style=filled ]
+	z32 [ shape=diamond, label = "z32 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	z15 [ shape=invhouse, label = "z15 AND", fillcolor=orange, style=filled ]
+	z19 [ shape=diamond, label = "z19 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	nmh [ shape=square, label = "nmh XOR", fillcolor=yellow, style=filled ]
+	wrv [ shape=invhouse, label = "wrv AND", fillcolor=orange, style=filled ]
+	z26 [ shape=diamond, label = "z26 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	vhs [ shape=invhouse, label = "vhs AND", fillcolor=orange, style=filled ]
+	jst [ shape=square, label = "jst XOR", fillcolor=yellow, style=filled ]
+	rgb [ shape=square, label = "rgb XOR", fillcolor=yellow, style=filled ]
+	pvv [ shape=invhouse, label = "pvv AND", fillcolor=orange, style=filled ]
+	vgf [ shape=invhouse, label = "vgf AND", fillcolor=orange, style=filled ]
+	wrb [ shape=invtriangle, label = "wrb OR", fillcolor=cyan, style=filled ]
+	qtj [ shape=invtriangle, label = "qtj OR", fillcolor=cyan, style=filled ]
+	z17 [ shape=diamond, label = "z17 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	shw [ shape=invtriangle, label = "shw OR", fillcolor=cyan, style=filled ]
+	rvv [ shape=invtriangle, label = "rvv OR", fillcolor=cyan, style=filled ]
+	cfp [ shape=invhouse, label = "cfp AND", fillcolor=orange, style=filled ]
+	z25 [ shape=diamond, label = "z25 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	njd [ shape=invhouse, label = "njd AND", fillcolor=orange, style=filled ]
+	ptc [ shape=invhouse, label = "ptc AND", fillcolor=orange, style=filled ]
+	vhr [ shape=invtriangle, label = "vhr OR", fillcolor=cyan, style=filled ]
+	hdf [ shape=invtriangle, label = "hdf OR", fillcolor=cyan, style=filled ]
+	z33 [ shape=diamond, label = "z33 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	bhb [ shape=invhouse, label = "bhb AND", fillcolor=orange, style=filled ]
+	jhf [ shape=square, label = "jhf XOR", fillcolor=yellow, style=filled ]
+	vrb [ shape=invhouse, label = "vrb AND", fillcolor=orange, style=filled ]
+	scp [ shape=invtriangle, label = "scp OR", fillcolor=cyan, style=filled ]
+	vbc [ shape=invhouse, label = "vbc AND", fillcolor=orange, style=filled ]
+	z44 [ shape=diamond, label = "z44 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	wvj [ shape=square, label = "wvj XOR", fillcolor=yellow, style=filled ]
+	dhs [ shape=invhouse, label = "dhs AND", fillcolor=orange, style=filled ]
+	vjh [ shape=square, label = "vjh XOR", fillcolor=yellow, style=filled ]
+	qnt [ shape=invtriangle, label = "qnt OR", fillcolor=cyan, style=filled ]
+	dwd [ shape=invhouse, label = "dwd AND", fillcolor=orange, style=filled ]
+	mkv [ shape=invhouse, label = "mkv AND", fillcolor=orange, style=filled ]
+	gdg [ shape=invhouse, label = "gdg AND", fillcolor=orange, style=filled ]
+	gwc [ shape=square, label = "gwc XOR", fillcolor=yellow, style=filled ]
+	vmf [ shape=invhouse, label = "vmf AND", fillcolor=orange, style=filled ]
+	cnb [ shape=invtriangle, label = "cnb OR", fillcolor=cyan, style=filled ]
+	kmr [ shape=square, label = "kmr XOR", fillcolor=yellow, style=filled ]
+	vgh [ shape=invhouse, label = "vgh AND", fillcolor=orange, style=filled ]
+	tdw [ shape=invtriangle, label = "tdw OR", fillcolor=cyan, style=filled ]
+	whn [ shape=invtriangle, label = "whn OR", fillcolor=cyan, style=filled ]
+	z40 [ shape=diamond, label = "z40 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	tqq [ shape=invhouse, label = "tqq AND", fillcolor=orange, style=filled ]
+	jng [ shape=invhouse, label = "jng AND", fillcolor=orange, style=filled ]
+	dnt [ shape=square, label = "dnt XOR", fillcolor=yellow, style=filled ]
+	dmt [ shape=invhouse, label = "dmt AND", fillcolor=orange, style=filled ]
+	kkk [ shape=invtriangle, label = "kkk OR", fillcolor=cyan, style=filled ]
+	z43 [ shape=diamond, label = "z43 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	gbp [ shape=square, label = "gbp XOR", fillcolor=yellow, style=filled ]
+	nmv [ shape=invhouse, label = "nmv AND", fillcolor=orange, style=filled ]
+	ffj [ shape=invhouse, label = "ffj AND", fillcolor=orange, style=filled ]
+	z37 [ shape=diamond, label = "z37 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	bdw [ shape=invtriangle, label = "bdw OR", fillcolor=cyan, style=filled ]
+	gmj [ shape=invtriangle, label = "gmj OR", fillcolor=cyan, style=filled ]
+	z21 [ shape=diamond, label = "z21 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	bjf [ shape=square, label = "bjf XOR", fillcolor=yellow, style=filled ]
+	gsh [ shape=invtriangle, label = "gsh OR", fillcolor=cyan, style=filled ]
+	wht [ shape=square, label = "wht XOR", fillcolor=yellow, style=filled ]
+	nsc [ shape=square, label = "nsc XOR", fillcolor=yellow, style=filled ]
+	mgq [ shape=invhouse, label = "mgq AND", fillcolor=orange, style=filled ]
+	vkc [ shape=invtriangle, label = "vkc OR", fillcolor=cyan, style=filled ]
+	hrk [ shape=invtriangle, label = "hrk OR", fillcolor=cyan, style=filled ]
+	bkg [ shape=invhouse, label = "bkg AND", fillcolor=orange, style=filled ]
+	rhm [ shape=invhouse, label = "rhm AND", fillcolor=orange, style=filled ]
+	twn [ shape=square, label = "twn XOR", fillcolor=yellow, style=filled ]
+	scq [ shape=square, label = "scq XOR", fillcolor=yellow, style=filled ]
+	dnh [ shape=invhouse, label = "dnh AND", fillcolor=orange, style=filled ]
+	mcc [ shape=invhouse, label = "mcc AND", fillcolor=orange, style=filled ]
+	gns [ shape=invhouse, label = "gns AND", fillcolor=orange, style=filled ]
+	z14 [ shape=diamond, label = "z14 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	z02 [ shape=diamond, label = "z02 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	qbb [ shape=invtriangle, label = "qbb OR", fillcolor=cyan, style=filled ]
+	z45 [ shape=invtriangle, label = "z45 OR", fillcolor=cyan, style=filled ]
+	msv [ shape=invhouse, label = "msv AND", fillcolor=orange, style=filled ]
+	tjw [ shape=invhouse, label = "tjw AND", fillcolor=orange, style=filled ]
+	ksh [ shape=invhouse, label = "ksh AND", fillcolor=orange, style=filled ]
+	shq [ shape=square, label = "shq XOR", fillcolor=yellow, style=filled ]
+	z01 [ shape=diamond, label = "z01 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	vbm [ shape=invhouse, label = "vbm AND", fillcolor=orange, style=filled ]
+	dkm [ shape=square, label = "dkm XOR", fillcolor=yellow, style=filled ]
+	z23 [ shape=diamond, label = "z23 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	kbd [ shape=invhouse, label = "kbd AND", fillcolor=orange, style=filled ]
+	z22 [ shape=diamond, label = "z22 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	kqm [ shape=square, label = "kqm XOR", fillcolor=yellow, style=filled ]
+	rkf [ shape=invhouse, label = "rkf AND", fillcolor=orange, style=filled ]
+	z04 [ shape=diamond, label = "z04 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	z12 [ shape=diamond, label = "z12 XOR", fillcolor=black, style=filled, fontcolor=white ]
+	fhg [ shape=invhouse, label = "fhg AND", fillcolor=orange, style=filled ]
+	bwq [ shape=square, label = "bwq XOR", fillcolor=yellow, style=filled ]
+	bjc [ shape=square, label = "bjc XOR", fillcolor=yellow, style=filled ]
+	tjp [ shape=square, label = "tjp XOR", fillcolor=yellow, style=filled ]
+	pfn [ shape=invhouse, label = "pfn AND", fillcolor=orange, style=filled ]
+	gdf [ shape=square, label = "gdf XOR", fillcolor=yellow, style=filled ]
+	rpj [ shape=invhouse, label = "rpj AND", fillcolor=orange, style=filled ]
+	hrg [ shape=invhouse, label = "hrg AND", fillcolor=orange, style=filled ]
+	gpd [ shape=invhouse, label = "gpd AND", fillcolor=orange, style=filled ]
+	z10 [ shape=diamond, label = "z10 XOR", fillcolor=black, style=filled, fontcolor=white ]
+
+	
+	ctb -> qsv
+	x29 -> fkb
+	y13 -> vht
+	vrb -> kgv
+	tjp -> z31
+	jjk -> djh
+	y25 -> djr
+	nsc -> gpt
+	vrg -> z30
+	y11 -> jsd
+	whn -> z03
+	shw -> hpv
+	tkj -> rkg
+	y12 -> gvm
+	y00 -> z00
+	scq -> z16
+	y12 -> htp
+	y20 -> hbf
+	nmh -> ggr
+	y35 -> fqm
+	rgb -> z20
+	x27 -> dft
+	y08 -> mnn
+	pvr -> ccv
+	y03 -> vvj
+	qbb -> z38
+	tvj -> z34
+	y27 -> mjw
+	dvj -> ckf
+	y23 -> gjq
+	x37 -> fdg
+	mjd -> z27
+	mkv -> tkj
+	vht -> z13
+	x18 -> dwt
+	bkn -> ggg
+	jsd -> z11
+	nmv -> pvr
+	y15 -> dvj
+	y44 -> nng
+	y33 -> vqn
+	x43 -> csh
+	jst -> z06
+	cdw -> qgc
+	y42 -> fgd
+	qnt -> z35
+	x38 -> cpg
+	pfn -> hfq
+	htp -> jjk
+	mcm -> pqq
+	x19 -> gth
+	y22 -> bkn
+	x40 -> fqs
+	rsq -> z18
+	csh -> fnc
+	ptc -> mjd
+	trb -> z36
+	x39 -> dqk
+	njd -> cgq
+	x36 -> hwf
+	nqs -> kgr
+	scq -> swj
+	dkm -> tmf
+	x36 -> gdr
+	x05 -> tvp
+	ccv -> fwf
+	rsq -> kjp
+	kff -> ggh
+	y03 -> vmd
+	y44 -> vrw
+	y30 -> vrg
+	pqq -> gvj
+	qsv -> qwh
+	hpv -> vbk
+	vbk -> z08
+	jng -> wff
+	x17 -> ppv
+	bhb -> z05
+	fhg -> ngc
+	x02 -> mdw
+	fgd -> z42
+	fkb -> nqs
+	gdr -> mkk
+	y26 -> rrk
+	y28 -> mtc
+	mnn -> njs
+	x39 -> ksv
+	y21 -> nbf
+	tmf -> rsq
+	wht -> z07
+	bdw -> ppr
+	shq -> ncc
+	x37 -> gbn
+	x06 -> fsb
+	y10 -> mcm
+	ckf -> jpj
+	x14 -> hdb
+	pvr -> z39
+	y23 -> ctb
+	jst -> vvg
+	fqm -> trb
+	qtj -> rvt
+	x05 -> sgt
+	hdf -> z28
+	y34 -> tvj
+	tvj -> rtb
+	y09 -> mnk
+	y04 -> kff
+	y35 -> kps
+	mnk -> z09
+	x42 -> tcm
+	fkb -> z29
+	x24 -> wck
+	qsv -> z24
+	mtc -> fhn
+	rqn -> z41
+	x43 -> cdw
+	rvt -> fdw
+	y07 -> qrm
+	x41 -> rqn
+	gbp -> dwb
+	tcm -> jkj
+	x09 -> hrq
+	vkc -> z32
+	x15 -> z15
+	wrb -> z19
+	x40 -> nmh
+	kps -> wrv
+	fdw -> z26
+	mjd -> vhs
+	tvp -> jst
+	x20 -> rgb
+	x26 -> pvv
+	kqm -> vgf
+	dwt -> wrb
+	wck -> qtj
+	hrk -> z17
+	vvg -> shw
+	fqs -> rvv
+	y29 -> cfp
+	bwq -> z25
+	x08 -> njd
+	rrk -> ptc
+	rkf -> vhr
+	vhs -> hdf
+	vqn -> z33
+	tvp -> bhb
+	x14 -> jhf
+	rgb -> vrb
+	gth -> scp
+	x31 -> vbc
+	vrw -> z44
+	y38 -> wvj
+	gbn -> dhs
+	x06 -> vjh
+	hrg -> qnt
+	kmr -> dwd
+	vmd -> mkv
+	y32 -> gdg
+	vrg -> gwc
+	y33 -> vmf
+	ppr -> cnb
+	y28 -> kmr
+	y02 -> vgh
+	hrq -> tdw
+	vgh -> whn
+	fwf -> z40
+	ggg -> tqq
+	nbf -> jng
+	dvj -> dnt
+	ngc -> dmt
+	djh -> kkk
+	cdw -> z43
+	x19 -> gbp
+	qbb -> nmv
+	x21 -> ffj
+	gbn -> z37
+	gdg -> bdw
+	gpd -> gmj
+	kgv -> z21
+	y18 -> bjf
+	bkg -> gsh
+	x07 -> wht
+	x01 -> nsc
+	vrw -> mgq
+	vbc -> vkc
+	tjw -> hrk
+	x01 -> bkg
+	fgd -> rhm
+	x24 -> twn
+	y16 -> scq
+	x11 -> dnh
+	cgq -> mcc
+	x13 -> gns
+	kkk -> z14
+	mdw -> z02
+	dhs -> qbb
+	nng -> z45
+	rqn -> msv
+	x16 -> tjw
+	hwf -> ksh
+	y32 -> shq
+	nsc -> z01
+	gsh -> vbm
+	y17 -> dkm
+	gjq -> z23
+	gvm -> kbd
+	wff -> z22
+	x22 -> kqm
+	jhf -> rkf
+	tkj -> z04
+	gmj -> z12
+	x30 -> fhg
+	y25 -> bwq
+	x04 -> bjc
+	y31 -> tjp
+	y41 -> pfn
+	x10 -> gdf
+	x00 -> rpj
+	x34 -> hrg
+	jsd -> gpd
+	tdw -> z10
+	tqq -> qsv
+	y29 -> fkb
+	x13 -> vht
+	hbf -> kgv
+	ngc -> z31
+	vht -> djh
+	x25 -> djr
+	rpj -> gpt
+	kgr -> z30
+	x11 -> jsd
+	vmd -> z03
+	wht -> hpv
+	bjc -> rkg
+	x12 -> gvm
+	x00 -> z00
+	jpj -> z16
+	x12 -> htp
+	x20 -> hbf
+	fwf -> ggr
+	x35 -> fqm
+	scp -> z20
+	y27 -> dft
+	x08 -> mnn
+	ksv -> ccv
+	x03 -> vvj
+	wvj -> z38
+	cnb -> z34
+	x27 -> mjw
+	vhr -> ckf
+	x23 -> gjq
+	y37 -> fdg
+	dft -> z27
+	vvj -> tkj
+	jjk -> z13
+	y18 -> dwt
+	vgf -> ggg
+	gvj -> z11
+	cpg -> pvr
+	x15 -> dvj
+	x44 -> nng
+	x33 -> vqn
+	y43 -> csh
+	vjh -> z06
+	jkj -> qgc
+	x42 -> fgd
+	kps -> z35
+	y38 -> cpg
+	msv -> hfq
+	kbd -> jjk
+	tdw -> pqq
+	y19 -> gth
+	x22 -> bkn
+	y40 -> fqs
+	bjf -> z18
+	qgc -> fnc
+	pvv -> mjd
+	hwf -> z36
+	y39 -> dqk
+	njs -> cgq
+	y36 -> hwf
+	cfp -> kgr
+	jpj -> swj
+	hrk -> tmf
+	y36 -> gdr
+	y05 -> tvp
+	dqk -> fwf
+	bjf -> kjp
+	rkg -> ggh
+	x03 -> vmd
+	x44 -> vrw
+	x30 -> vrg
+	gdf -> gvj
+	twn -> qwh
+	qrm -> vbk
+	mnn -> z08
+	ffj -> wff
+	y17 -> ppv
+	sgt -> z05
+	gwc -> ngc
+	y02 -> mdw
+	hfq -> z42
+	fhn -> nqs
+	ksh -> mkk
+	x26 -> rrk
+	x28 -> mtc
+	vbk -> njs
+	y39 -> ksv
+	x21 -> nbf
+	ppv -> rsq
+	shw -> z07
+	vqn -> ppr
+	vkc -> ncc
+	y37 -> gbn
+	y06 -> fsb
+	x10 -> mcm
+	dnt -> jpj
+	y14 -> hdb
+	ksv -> z39
+	x23 -> ctb
+	vjh -> vvg
+	wrv -> trb
+	bwq -> rvt
+	y05 -> sgt
+	kmr -> z28
+	x34 -> tvj
+	cnb -> rtb
+	x09 -> mnk
+	x04 -> kff
+	x35 -> kps
+	cgq -> z09
+	y42 -> tcm
+	fhn -> z29
+	y24 -> wck
+	twn -> z24
+	dwd -> fhn
+	rvv -> z41
+	y43 -> cdw
+	djr -> fdw
+	x07 -> qrm
+	y41 -> rqn
+	wrb -> dwb
+	rhm -> jkj
+	y09 -> hrq
+	shq -> z32
+	y15 -> z15
+	gbp -> z19
+	y40 -> nmh
+	qnt -> wrv
+	rrk -> z26
+	dft -> vhs
+	ggh -> jst
+	y20 -> rgb
+	y26 -> pvv
+	wff -> vgf
+	kjp -> wrb
+	qwh -> qtj
+	dkm -> z17
+	fsb -> shw
+	ggr -> rvv
+	x29 -> cfp
+	qtj -> z25
+	y08 -> njd
+	fdw -> ptc
+	hdb -> vhr
+	mjw -> hdf
+	bdw -> z33
+	ggh -> bhb
+	y14 -> jhf
+	scp -> vrb
+	dwb -> scp
+	y31 -> vbc
+	fnc -> z44
+	x38 -> wvj
+	mkk -> dhs
+	y06 -> vjh
+	rtb -> qnt
+	hdf -> dwd
+	whn -> mkv
+	x32 -> gdg
+	kgr -> gwc
+	x33 -> vmf
+	vmf -> cnb
+	x28 -> kmr
+	x02 -> vgh
+	mcc -> tdw
+	vbm -> whn
+	nmh -> z40
+	gjq -> tqq
+	kgv -> jng
+	vhr -> dnt
+	tjp -> dmt
+	gns -> kkk
+	jkj -> z43
+	y19 -> gbp
+	wvj -> nmv
+	y21 -> ffj
+	mkk -> z37
+	ncc -> bdw
+	dnh -> gmj
+	nbf -> z21
+	x18 -> bjf
+	gpt -> gsh
+	y07 -> wht
+	y01 -> nsc
+	fnc -> mgq
+	dmt -> vkc
+	swj -> hrk
+	y01 -> bkg
+	hfq -> rhm
+	y24 -> twn
+	x16 -> scq
+	y11 -> dnh
+	mnk -> mcc
+	y13 -> gns
+	jhf -> z14
+	gsh -> z02
+	fdg -> qbb
+	mgq -> z45
+	rvv -> msv
+	y16 -> tjw
+	trb -> ksh
+	x32 -> shq
+	rpj -> z01
+	mdw -> vbm
+	x17 -> dkm
+	ggg -> z23
+	gmj -> kbd
+	kqm -> z22
+	y22 -> kqm
+	kkk -> rkf
+	bjc -> z04
+	gvm -> z12
+	y30 -> fhg
+	x25 -> bwq
+	y04 -> bjc
+	x31 -> tjp
+	x41 -> pfn
+	y10 -> gdf
+	y00 -> rpj
+	y34 -> hrg
+	gvj -> gpd
+	mcm -> z10
+}
